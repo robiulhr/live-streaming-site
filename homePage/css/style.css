@@ -1,0 +1,252 @@
+:root{
+    --nav-bg-color :#000;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: rgb(46, 45, 45);
+    font-family: 'Open Sans', sans-serif;
+    height: auto;
+    width: 100vw;
+}
+header{
+    width: 100%;
+    background-color: var(--nav-bg-color);
+    margin-bottom: 30px;
+}
+nav{
+    width: 100%;
+}
+/*-----------------------------------------------*/
+
+.logo-section{
+  height: 100px;
+  padding: 10px;
+}
+.left-sectoin svg {
+vertical-align: middle;
+height: 80px;
+}
+/*-----------------------------------------------*/
+
+.wrap {
+    width: 100%;
+    height: 100px;
+}
+.search {
+    width: 100%;
+    display: flex;
+    height: 100%;
+    padding: 30px 0;
+}
+
+.searchTerm {
+    width: 100%;
+    border: 3px solid #272c2c;
+    border-right: none;
+    padding: 8px;
+    height: 36px;
+    border-radius: 5px 0 0 5px;
+    outline: none;
+    color: #ffffff91;
+    background-color: rgb(28, 34, 33);
+}
+
+.searchTerm:focus {
+    color: #2e3333;
+}
+
+.searchButton {
+    width: 50px;
+    height: 36px;
+    border: 1px solid #272c2c;
+    background: #000607e0;
+    text-align: center;
+    color: #fff;
+    border-radius: 0 5px 5px 0;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+/*-----------------------------------------------*/
+.right-section{
+    width: 100%;
+    height: 100px;
+
+}
+.ham-burger-menu{
+    height: 100%;
+    width: 100%;
+}
+.menu--4 {
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+
+}
+.ham-burger-menu-input {
+    display: none;
+}
+
+.grid {
+    display: grid;
+    grid-template-rows: 1fr 1fr;
+    grid-template-columns: 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+}
+
+.grid>* {
+    position: relative;
+}
+
+.ham-burger-menu-label {
+    display: block;
+    cursor: pointer;
+    position: absolute;
+    width:  100px;
+    height: 100px;
+    max-width: 150px;
+    max-height: 150px;
+}
+.ham-burger-menu-path {
+    fill: none;
+    stroke: #ffffff;
+    stroke-width: 3;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    --length: 24;
+    --offset: -38;
+    stroke-dasharray: var(--length) var(--total-length);
+    stroke-dashoffset: var(--offset);
+    transition: all .8s cubic-bezier(.645, .045, .355, 1);
+}
+
+.ham-burger-menu-circle {
+    fill: #fff3;
+    opacity: 0;
+}
+
+.ham-burger-menu-label:hover .ham-burger-menu-circle {
+    opacity: 1;
+}
+
+.cross .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--1,
+.cross .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--3 {
+    --length: 22.627416998;
+}
+
+.cross .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--2 {
+    --length: 0;
+}
+
+.back .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--1,
+.back .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--3 {
+    --length: 8.602325267;
+}
+
+.menu--4 .line--1,
+.menu--4 .line--3 {
+    --total-length: 103.35061645507812;
+    --offset: -42.35061645507812;
+}
+
+.menu--4 .line--2 {
+    --total-length: 99;
+}
+
+.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .ham-burger-menu-path {
+    transform: translateX(31px);
+}
+
+.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--1,
+.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--3 {
+    --offset: -8.602325267;
+}
+
+.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--2 {
+    --offset: -7;
+}
+
+.debug {
+    display: none;
+}
+
+.line--debug {
+    opacity: 0;
+    stroke-dasharray: none;
+}
+
+@media screen and (min-width: 800px) {
+    .debug {
+        opacity: 0.8;
+        display: block;
+        position: absolute;
+        z-index: 1;
+        font-family: sans-serif;
+        transform: rotate(-45deg);
+        transform-origin: 0% 100%;
+        background: #000;
+        color: #fff;
+        width: 150px;
+        height: 100px;
+        line-height: 150px;
+        text-align: center;
+        user-select: none;
+    }
+
+    .debug:hover {
+        opacity: 1;
+    }
+
+    .debug.active {
+        background: #fff;
+        color: #000;
+    }
+
+    .debug.active+.grid .ham-burger-menu-path.line--debug {
+        opacity: .2;
+    }
+}
+
+
+
+
+
+
+/* ------------------------------------------- */
+.main-first-slider-title{
+    padding: 8px;
+    margin-left: 45px;
+
+}
+.main-first-slider-title h1{
+font-size: 23px;
+color: white;
+}
+
+.slider-container{
+    max-width: 95vw;
+    margin: 0 auto;
+}
+.owl-carousel .owl-video-play-icon{
+    background: url(https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.video.play.png);
+}
+
+
+
+
+/* -------------------------------------------------- */
+.main-second-slider-title {
+    padding: 8px;
+    margin-left: 45px;
+}
+.main-second-slider-title h1{
+font-size: 23px;
+color: white;
+}
