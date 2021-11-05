@@ -1,15 +1,15 @@
 // -----------------------------------  main-first-slider ---------------------
 (() => {
     $(document).ready(function () {
-        var owl = $('.owl-carousel');
+        var owl = $('.owl-carousel#slider-1');
         owl.owlCarousel({
             loop: true,
             merge: true,
             nav: false,
-            dots: false,
+            dots: true,
             margin: 10,
             videoWidth: "auto",
-            videoHeight: 350,
+            videoHeight: 330,
             lazyLoad: true,
             center: true,
             video: true,
@@ -49,15 +49,15 @@
     });
     // -----------------------------------  main-second-slider ---------------------
     $(document).ready(function () {
-        var owl2 = $('.owl-carousel-2');
-        owl2.owlCarousel({
+        var owl = $('.owl-carousel#slider-2');
+        owl.owlCarousel({
             loop: true,
             merge: true,
-            nav: false,
+            nav: true,
             dots: false,
             margin: 10,
             videoWidth: "auto",
-            videoHeight: 350,
+            videoHeight: 300,
             lazyLoad: true,
             center: true,
             video: true,
@@ -83,11 +83,11 @@
                 }
             }
         });
-        owl2.on('mousewheel', '.owl-stage', function (e) {
+        owl.on('mousewheel', '.owl-stage', function (e) {
             if (e.deltaY > 0) {
-                owl2.trigger('next.owl');
+                owl.trigger('next.owl');
             } else {
-                owl2.trigger('prev.owl');
+                owl.trigger('prev.owl');
             }
             e.preventDefault();
         });

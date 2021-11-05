@@ -11,217 +11,18 @@ body {
     font-family: 'Open Sans', sans-serif;
     height: auto;
     width: 100vw;
+    overflow-x: hidden;
 }
-header{
-    width: 100%;
-    background-color: var(--nav-bg-color);
-    margin-bottom: 30px;
-}
-nav{
-    width: 100%;
-}
-/*-----------------------------------------------*/
-
-.logo-section{
-  height: 100px;
-  padding: 10px;
-}
-.left-sectoin svg {
-vertical-align: middle;
-height: 80px;
-}
-/*-----------------------------------------------*/
-
-.wrap {
-    width: 100%;
-    height: 100px;
-}
-.search {
-    width: 100%;
-    display: flex;
-    height: 100%;
-    padding: 30px 0;
-}
-
-.searchTerm {
-    width: 100%;
-    border: 3px solid #272c2c;
-    border-right: none;
-    padding: 8px;
-    height: 36px;
-    border-radius: 5px 0 0 5px;
-    outline: none;
-    color: #ffffff91;
-    background-color: rgb(28, 34, 33);
-}
-
-.searchTerm:focus {
-    color: #2e3333;
-}
-
-.searchButton {
-    width: 50px;
-    height: 36px;
-    border: 1px solid #272c2c;
-    background: #000607e0;
-    text-align: center;
-    color: #fff;
-    border-radius: 0 5px 5px 0;
-    cursor: pointer;
-    font-size: 15px;
-}
-
-/*-----------------------------------------------*/
-.right-section{
-    width: 100%;
-    height: 100px;
-
-}
-.ham-burger-menu{
-    height: 100%;
-    width: 100%;
-}
-.menu--4 {
-    height: 100%;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-}
-.ham-burger-menu-input {
-    display: none;
-}
-
-.grid {
-    display: grid;
-    grid-template-rows: 1fr 1fr;
-    grid-template-columns: 1fr 1fr;
-    width: 100vw;
-    height: 100vh;
-    position: absolute;
-}
-
-.grid>* {
-    position: relative;
-}
-
-.ham-burger-menu-label {
-    display: block;
-    cursor: pointer;
-    position: absolute;
-    width:  100px;
-    height: 100px;
-    max-width: 150px;
-    max-height: 150px;
-}
-.ham-burger-menu-path {
-    fill: none;
-    stroke: #ffffff;
-    stroke-width: 3;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    --length: 24;
-    --offset: -38;
-    stroke-dasharray: var(--length) var(--total-length);
-    stroke-dashoffset: var(--offset);
-    transition: all .8s cubic-bezier(.645, .045, .355, 1);
-}
-
-.ham-burger-menu-circle {
-    fill: #fff3;
-    opacity: 0;
-}
-
-.ham-burger-menu-label:hover .ham-burger-menu-circle {
-    opacity: 1;
-}
-
-.cross .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--1,
-.cross .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--3 {
-    --length: 22.627416998;
-}
-
-.cross .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--2 {
-    --length: 0;
-}
-
-.back .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--1,
-.back .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--3 {
-    --length: 8.602325267;
-}
-
-.menu--4 .line--1,
-.menu--4 .line--3 {
-    --total-length: 103.35061645507812;
-    --offset: -42.35061645507812;
-}
-
-.menu--4 .line--2 {
-    --total-length: 99;
-}
-
-.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .ham-burger-menu-path {
-    transform: translateX(31px);
-}
-
-.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--1,
-.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--3 {
-    --offset: -8.602325267;
-}
-
-.menu--4 .ham-burger-menu-input:checked+.ham-burger-menu-svg .line--2 {
-    --offset: -7;
-}
-
-.debug {
-    display: none;
-}
-
-.line--debug {
-    opacity: 0;
-    stroke-dasharray: none;
-}
-
-@media screen and (min-width: 800px) {
-    .debug {
-        opacity: 0.8;
-        display: block;
-        position: absolute;
-        z-index: 1;
-        font-family: sans-serif;
-        transform: rotate(-45deg);
-        transform-origin: 0% 100%;
-        background: #000;
-        color: #fff;
-        width: 150px;
-        height: 100px;
-        line-height: 150px;
-        text-align: center;
-        user-select: none;
-    }
-
-    .debug:hover {
-        opacity: 1;
-    }
-
-    .debug.active {
-        background: #fff;
-        color: #000;
-    }
-
-    .debug.active+.grid .ham-burger-menu-path.line--debug {
-        opacity: .2;
-    }
-}
-
-
-
 
 
 
 /* ------------------------------------------- */
+.main-first-slider{
+    background-color: rgb(31, 30, 30);
+    padding: 10px;
+}
 .main-first-slider-title{
-    padding: 8px;
+    padding: 18px 8px;
     margin-left: 45px;
 
 }
@@ -232,21 +33,174 @@ color: white;
 
 .slider-container{
     max-width: 95vw;
+    margin: 15px auto;
+}
+.item-video{
+    position: relative;
+}
+#avatar-and-title-slider {
+    position: absolute;
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    height: 20%;
+    background-color: rgba(34, 33, 33, 0.52);
+    left: 0;
+    right: 0;
+    bottom: -10%;
     margin: 0 auto;
+    transition: all .4s cubic-bezier(0.83, 0.07, 0.1, 0.8);
+    opacity: 0;
+    visibility: hidden;
+}
+.item-video:hover #avatar-and-title-slider {
+    bottom: 0%;
+    opacity: 1;
+    visibility: visible;
 }
 .owl-carousel .owl-video-play-icon{
-    background: url(https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.video.play.png);
+    background: url(https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.video.play.png) !important;
 }
 
 
 
 
 /* -------------------------------------------------- */
-.main-second-slider-title {
-    padding: 8px;
+.main-all-content{
+    padding: 10px;
+    width: 100%;
+}
+.main-all-content-title {
+    padding: 25px 8px 18px 8px;
     margin-left: 45px;
 }
-.main-second-slider-title h1{
+.main-all-content-title h1 {
 font-size: 23px;
 color: white;
+}
+.main-all-content-container{
+
+}
+.main-all-content-inner {
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+justify-content: center;
+}
+.main-all-single-content-container{
+padding: 22px ;
+position: relative;
+width: 390px;
+height: 250px;
+}
+.main-all-single-content-container:hover #avatar-and-title-main {
+/* transform: translateY(-30%); */
+bottom: 10%;
+opacity: 1;
+visibility: visible;
+
+}
+
+.main-all-single-content{
+width: 100%;
+height: 100%;
+}
+.main-all-single-content video{
+    width: 100%;
+    height: 100%;
+
+}
+
+
+
+/* --------------------- */
+.video-play-button-container{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+}
+.video-play-button{
+height: 50px;
+width: 50px;
+background-image: url(https://owlcarousel2.github.io/OwlCarousel2/assets/owlcarousel/assets/owl.video.play.png
+);
+background-size: cover;
+}
+
+/* ------------------------------ */
+#avatar-and-title-main {
+position: absolute;
+display: flex;
+flex-direction: row;
+width: 90%;
+height: 30%;
+background-color: rgba(34, 33, 33, 0.52);
+left: 0;
+right: 0;
+bottom: -10%;
+margin: 0 auto;
+transition:all .4s cubic-bezier(0.83, 0.07, 0.1, 0.8);
+opacity: 0;
+visibility: hidden;
+}
+.avatar-and-video-title{
+    width: 100%;
+    display: flex;
+}
+.avatar-and-video-title-left{
+    width: 30%;
+}
+.avatar-container{
+width: 100%;
+height: 100%;
+padding: 13px 20px;
+}
+.avatar-container .avatar {
+width: 50px;
+height: 50px;
+border-radius: 50px;
+background-image: url(../../image/32189.jpg);
+background-size: cover;
+}
+
+.avatar-and-video-title-right{
+    width: 70%;
+}
+
+.title-container{
+
+}
+.title-container .title{
+
+}
+.title-container .title h2 {
+font-size: 18px !important;
+text-align: center;
+margin-top: 19px;
+line-height: 10px;
+color: rgb(97, 93, 93);
+}
+.title-container .title p{
+font-size: 15px !important;
+text-align: center;
+margin-bottom: -10px;
+color: rgb(0, 0, 0);
+
+
+
+}
+
+/* ------------------------------------ */
+.footer{
+    width: 100%;
+    background-color: black;
+    margin-top: 20px;
+}
+.footer-content{
+    width: 100%;
+    min-height: 30px;
+    text-align: center;
+    padding: 30px;
 }
