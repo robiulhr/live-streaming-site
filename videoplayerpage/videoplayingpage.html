@@ -1,0 +1,478 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="./css/input-and-button.css">
+    <link rel="stylesheet" href="./css/videoplayerpage.css">
+    <link rel="stylesheet" href="../homePage/css/nav.css">
+    <link rel="stylesheet" href="../homePage/css/style.css">
+    <link rel="stylesheet" href="../homePage/css/responsive.css">
+
+    <title>Document</title>
+
+</head>
+
+<body>
+    <header>
+        <nav>
+            <div class="container">
+                <div class="row ">
+                    <div class="col-3">
+                        <div class="left-sectoin">
+                            <div class="logo-section">
+                                <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink"
+                                    version="1.1" id="Layer_1" x="0px" y="0px" viewBox="0 0 1200 920"
+                                    enable-background="new 0 0 1200 920" xml:space="preserve">
+                                    <path fill="#F7941E"
+                                        d="M330.4,706.9L330.4,706.9c-22.7,7.2-47.2-5.5-54.4-28.2L155.8,299.2c-7.2-22.7,5.5-47.2,28.2-54.4l0,0  c22.7-7.2,47.2,5.5,54.4,28.2l120.2,379.5C365.8,675.2,353.1,699.7,330.4,706.9z" />
+                                    <path fill="#F7941E"
+                                        d="M305.1,703.7L305.1,703.7c-22.4-8.1-34.1-33.1-25.9-55.6l136-374.1c8.1-22.4,33.1-34.1,55.6-25.9l0,0  c22.4,8.1,34.1,33.1,25.9,55.6l-136,374.1C352.5,700.1,327.5,711.8,305.1,703.7z" />
+                                    <path fill="#F7941E"
+                                        d="M561,711.6L561,711.6c-23.2,5.5-46.7-8.9-52.2-32.1l-92.5-387.1c-5.5-23.2,8.9-46.7,32.1-52.2l0,0  c23.2-5.5,46.7,8.9,52.2,32.1l92.5,387.1C598.7,682.6,584.2,706.1,561,711.6z" />
+                                    <path fill="#F7941E"
+                                        d="M535.7,709L535.7,709c-21.8-9.7-31.6-35.5-21.9-57.3l162.7-363.3c9.7-21.8,35.5-31.6,57.3-21.9l0,0  c21.8,9.7,31.6,35.5,21.9,57.3L592.9,687.2C583.2,708.9,557.4,718.8,535.7,709z" />
+                                    <path fill="#00AEEF"
+                                        d="M963.1,357.4h-150c-18.1,0-33-14.8-33-33v0c0-18.1,14.8-33,33-33h150c18.1,0,33,14.8,33,33v0  C996.1,342.5,981.2,357.4,963.1,357.4z" />
+                                    <path fill="#F7941E"
+                                        d="M348.9,242.8h-69c-18.1,0-33-14.8-33-33v0c0-18.1,14.8-33,33-33h69c18.1,0,33,14.8,33,33v0  C381.9,227.9,367,242.8,348.9,242.8z" />
+                                    <path fill="#F7941E"
+                                        d="M656.3,242.8h-69c-18.1,0-33-14.8-33-33v0c0-18.1,14.8-33,33-33h69c18.1,0,33,14.8,33,33v0  C689.3,227.9,674.5,242.8,656.3,242.8z" />
+                                    <path fill="#00AEEF"
+                                        d="M963.1,515.6h-210c-18.1,0-33-14.8-33-33v0c0-18.1,14.8-33,33-33h210c18.1,0,33,14.8,33,33v0  C996.1,500.7,981.2,515.6,963.1,515.6z" />
+                                    <path fill="#00AEEF"
+                                        d="M963.1,660.4H688.6c-18.1,0-33-14.8-33-33v0c0-18.1,14.8-33,33-33h274.5c18.1,0,33,14.8,33,33v0  C996.1,645.5,981.2,660.4,963.1,660.4z" />
+                                </svg>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-6">
+                        <div class="middle-section">
+                            <div class="search-bar-section">
+                                <div class="wrap">
+                                    <div class="search">
+                                        <input type="text" class="searchTerm" placeholder="What are you looking for?">
+                                        <button type="submit" class="searchButton">
+                                            <i class="fa fa-search"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-3">
+                        <div class="right-section">
+                            <div class="ham-burger-menu">
+                                <div class="menu back menu--4">
+                                    <label class="ham-burger-menu-label">
+                                        <input type="checkbox" class="ham-burger-menu-input">
+                                        <svg class="ham-burger-menu-svg" viewBox="0 0 100 100"
+                                            xmlns="http://www.w3.org/2000/svg">
+                                            <circle cx="50" cy="50" r="30" class="ham-burger-menu-circle" />
+                                            <path class="line--1 ham-burger-menu-path"
+                                                d="M0 55l14-10c4.7-3.3 9-5 13-5h72" />
+                                            <path class="line--2 ham-burger-menu-path" d="M0 50h99" />
+                                            <path class="line--3 ham-burger-menu-path"
+                                                d="M0 45l14 10c4.7 3.3 9 5 13 5h72" />
+                                        </svg>
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+
+
+            </div>
+
+        </nav>
+    </header>
+    <main>
+
+        <div class="main-upper-wrapper">
+            <div class="main-upper-content">
+                <div class="main-video-and-comment">
+                    <div class="main-video-wrapper">
+                        <div class="main-video">
+                            <video src="../video/video (2).mp4" controls></video>
+                        </div>
+                        <div class="main-video-avatar-and-subscribe">
+                            <div class="main-video-avatar-wrapper">
+                                <div class="main-video-avatar-image-wrapper">
+                                    <a href="#">
+                                        <div class="main-video-avatar-image">
+
+                                        </div>
+
+                                    </a>
+                                </div>
+                                <div class="main-video-channel-name-wrapper">
+                                    <div class="main-video-channel-name">
+                                        <a href="#">
+                                            <h2>Channel Name</h2>
+                                        </a>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-video-subscribe-wrapper">
+                                <div class="main-video-subscribe">
+                                    <button>
+                                        SUBSCRIBE
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                        <hr style="height: 2px; margin-top: -10px; background-color: black;">
+                        <div class="main-video-description-wrapper">
+                            <div class="main-video-description">
+                                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Ratione facere corporis
+                                    iste ipsum consequuntur libero repudiandae, officiis rerum illum nemo totam optio
+                                    aut, possimus assumenda eius amet maiores nihil voluptas? Lorem, ipsum dolor sit
+                                    amet consectetur adipisicing elit. Voluptatem culpa maiores quis tenetur accusamus
+                                    perferendis cupiditate ullam velit. Quisquam expedita, labore odio illo possimus
+                                    quam laudantium quod dignissimos alias porro?</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-video-comment-wrapper">
+                        <div class="main-video-comment">
+                            <div class="main-video-comment-input-avatar-wrapper">
+                                <div class="main-video-comment-input-avatar-image-wrapper">
+                                    <a href="#">
+                                        <div class="main-video-comment-input-avatar-image">
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="main-video-comment-input-wrapper">
+                                    <div class="main-video-comment-input">
+                                        <div class="card card--inverted">
+                                            <label class="input">
+                                                <input class="input__field" type="text" placeholder=" " value="" />
+                                                <span class="input__label">Write a Comment</span>
+                                            </label>
+
+                                            <div class="button-group">
+                                                <button>Comment</button>
+                                                <button type="reset">Reset</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="main-video-single-comment-wrapper">
+                                <div class="main-video-single-comment-avatar-wrapper">
+                                    <a href="#">
+                                        <div class="main-video-single-comment-avatar">
+
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="main-video-single-comment-text-wrapper">
+                                    <div class="main-video-single-comment-text">
+
+                                        <h2><a href="#"> channel name</a></h2>
+                                        <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Doloremque,
+                                            dignissimos.</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-lower-wrapper">
+                <div class="main-lower-content">
+                    <div class="main-all-content-title">
+                        <h1>previous live</h1>
+                    </div>
+                    <div class="main-all-content-container">
+                        <div class="main-all-content-inner">
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="main-all-single-content-container">
+                                <div class="main-all-single-content">
+                                    <video src="../video/video (2).mp4"></video>
+                                </div>
+                                <div class="video-play-button-container">
+                                    <a href="#">
+                                        <div class="video-play-button">
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="avatar-and-video-title-container" id="avatar-and-title-main">
+                                    <div class="avatar-and-video-title">
+                                        <div class="avatar-and-video-title-left">
+                                            <a href="#">
+                                                <div class="avatar-container">
+                                                    <div class="avatar">
+                                                    </div>
+                                                </div>
+                                            </a>
+                                        </div>
+                                        <div class="avatar-and-video-title-right">
+                                            <div class="title-container">
+                                                <div class="title">
+                                                    <h2><a href="#"> Channel Name</a></h2>
+                                                    <p>video discripsion</p>
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                            </div>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <div class="footer-content">
+                <h2>this is footer</h2>
+            </div>
+        </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+</body>
+
+
+</html>

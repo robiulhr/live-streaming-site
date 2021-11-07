@@ -1,0 +1,159 @@
+
+main{
+    width: 100%;
+}
+.main-upper-wrapper{
+    width: 100%;
+
+}
+.main-upper-content{
+    width: 100%;
+
+}
+/* ------------------------ */
+.main-video-and-comment{
+    display: flex;
+
+}
+.main-video-wrapper{
+width: 60%;
+padding: 10px 25px;
+}
+.main-video{
+
+}
+
+.main-video video {
+    width: 100%;
+}
+
+
+/* -------------------------------------- */
+.main-video-avatar-and-subscribe{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    
+}
+.main-video-avatar-wrapper{
+    display: flex;
+    padding: 10px 20px;
+
+}
+/* ------------ */
+.main-video-avatar-image-wrapper{
+    margin-right: 30px;
+}
+.main-video-avatar-image{
+width: 60px;
+height: 60px;
+border-radius: 50px;
+background-image: url(../../image/32189.jpg);
+background-size: cover;
+background-position: center;
+}
+
+/* --------- */
+.main-video-channel-name-wrapper{
+
+}
+.main-video-channel-name{
+
+}
+.main-video-channel-name h2{
+    font-size: 16px;
+    line-height: 65px;
+
+}
+/* --------- */
+.main-video-subscribe-wrapper{
+padding: 30px;
+}
+.main-video-subscribe button{
+ padding: 8px 12px;   
+ border: none;
+}
+
+/* ------------------- */
+.main-video-description-wrapper{
+    padding: 20px;
+}
+.main-video-description{
+
+}
+.main-video-description p{
+color: white;
+}
+
+/* ---------------------------------------------- */
+.main-video-comment-wrapper{
+width: 40%;
+
+}
+.main-video-comment{
+padding: 10px;
+}
+.main-video-comment-input-avatar-wrapper{
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+    margin-bottom: 20px;
+}
+.main-video-comment-input-avatar-image-wrapper{
+width: 20%;
+display: flex;
+justify-content: center;
+}
+.main-video-comment-input-avatar-image{
+    height: 50px;
+    width: 50px;
+    border-radius: 50px;
+    background-image: url(../../image/img2.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+/* --------------------------- */
+
+.main-video-comment-input-wrapper {
+    width: 80%;
+    padding: 0px 20px;
+    margin-right: 20px;
+
+}
+
+
+/* ----------------------------------- */
+.main-video-single-comment-wrapper{
+    display: flex;
+    justify-content: center;
+}
+.main-video-single-comment-avatar-wrapper {
+    width: 20%;
+    display: flex;
+    justify-content: center;
+    margin: 10px 0px;
+}
+.main-video-single-comment-avatar{
+      height: 40px;
+      width: 40px;
+      border-radius: 50px;
+      background-image: url(../../image/img2.jpg);
+      background-size: cover;
+      background-position: center;
+}
+
+.main-video-single-comment-text-wrapper{
+    width: 80%;
+
+}
+.main-video-single-comment-text{
+padding: 10px;
+}
+.main-video-single-comment-text h2{
+    font-size: 17px;
+    line-height: 30px;
+}
+.main-video-single-comment-text p{
+    color: white;
+}
